@@ -16,7 +16,7 @@ You can create custom page templates apply to pages to give them specific layout
 #### 5. Media Management:
 A central gallery to store and manage media files such as images, videos which can then be used in posts or pages.
 
-#### 6. Search Functionality: -------
+#### 6. Search Functionality: (WIP)
 Built-in search features to allow users to find specific content or information within the CMS.
 
 #### 7. SEO Meta Tags & Clean URLs:
