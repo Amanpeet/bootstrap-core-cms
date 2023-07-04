@@ -1,0 +1,552 @@
+/*!
+Theme Name: Core PHP CMS
+Theme URI: http://defacegames.com/
+Author: Amanz
+Author URI: https://www.galzor.com/
+Description: A Custom theme template for number of projects, Handwritten by me, Amanz. Check more of my work at galzor.com. I am is full stack web developer and part time veteran gamer.
+Version: 1.0.0
+*/
+
+COLORS {
+ghost: #f8f9fa;
+light: #f4f5f6;
+dark1: #212529;
+dark0: #121212;
+colr1: #0d6efd;
+colr2: #198754;
+}
+
+/*-------------------------
+# Essentials
+-------------------------*/
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+  background: #fff;
+  color: #000;
+  font-family: sans-serif;
+}
+
+body {
+	background: #fff;
+  overflow-x: hidden;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #000;
+  font-family: 'Roboto', var(--bs-body-font-family);
+  font-size: 1rem;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', var(--bs-body-font-family);
+  font-weight: 700;
+  clear: both;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover,
+a:focus,
+a:active {
+  /* color: #198754; */
+  color: #0d6efd;
+  outline: 0;
+}
+
+p > a {
+  text-decoration: underline;
+}
+
+/* -----------------------
+  Common classes
+----------------------- */
+
+.link {
+  color: inherit;
+}
+
+.link:hover, .link:hover {
+  color: #0d6efd;
+}
+
+.bg-light {
+  background-color:#f4f5f6 !important;
+}
+
+.bg-ghost {
+  background-color:#f8f9fa !important;
+}
+
+.bg-dark2 {
+  background-color:#111 !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.font-strong {
+  font-weight: 700;
+}
+
+.lead {
+	font-weight: 400;
+}
+
+.bigp {
+	font-size: 18;
+	font-weight: 400;
+}
+
+.site-section {
+  display: block;
+  clear: both;
+  padding: 80px 0;
+}
+
+.cover-img {
+	width: 100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bigp {
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.btn {
+	border-radius: 0;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.btn.btn-dark {
+	background: #000;
+}
+
+.form-control {
+	border-radius: 0;
+}
+
+
+/* -----------------------
+  Theme
+----------------------- */
+
+.site-header {
+	border-bottom: 1px solid #ddd;
+}
+
+.site.frontpage .site-header {
+  border-bottom: none;
+}
+
+.header-logo {
+	width: 160px;
+	display: block;
+	margin-top: 10px;
+}
+
+.header-top a {
+  color: #aaa;
+}
+
+.ultra-title {
+  font-size: 72px;
+}
+
+.mega-title {
+  font-size: 54px;
+}
+
+/* Hero Slider */
+
+.hero-slider .carousel .carousel-item {
+  /* height: 100vh; */
+  /* height: calc(100vh - 76px); */
+  height: 640px;
+  background: #fff;
+  position: relative;
+}
+
+.hero-slider .carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-slider .carousel .carousel-control-next,
+.hero-slider .carousel .carousel-control-prev {
+  width: 5%;
+  max-width: 80px;
+  min-width: 40px;
+}
+
+.hero-slider .carousel .carousel-caption {
+  width: 100%;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  padding: 0;
+  color: #000;
+	text-align: left;
+}
+
+.hero-slider .carousel .carousel-caption > div {
+	position: relative;
+  top: 30%;
+}
+
+.hero-slider .carousel .carousel-caption h2 {
+	/* text-transform: uppercase; */
+	font-weight: 800;
+	font-size: 64px;
+	margin-bottom: 15px;
+}
+
+.hero-slider .carousel .carousel-caption h4 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 22px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.hero-slider .carousel .carousel-caption p {
+  color: #000;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.social-icon {
+	font-size: 16px;
+	color: #aaa;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.header-nav .navbar .nav-link {
+	color: #000;
+	text-transform: none;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	padding: 8px 16px;
+}
+
+.header-nav .navbar .nav-link:hover,
+.header-nav .navbar .nav-link:focus,
+.header-nav .navbar .nav-link.active {
+	color: #fff;
+  background: #000;
+}
+
+.header-nav .nav-item .dropdown-menu {
+	border-radius: 0px;
+}
+
+.header-nav .nav-item .dropdown-menu a {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.navbar-toggler {
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: -45px;
+}
+
+.card.dark-card {
+	border-radius: 0;
+	border: 10px solid #000;
+	background: #000;
+	overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card.dark-card.alt {
+	/* margin-right: -10px; */
+	/* position: relative; */
+	top: 70px;
+	left: 10px;
+}
+
+.card.dark-card img,
+.card.dark-card .card-img-overlayx {
+	transform: scale(1.0);
+  transition: all 0.4s ease;
+}
+
+.card.dark-card:hover img,
+.card.dark-card:hover .card-img-overlayx {
+	transform: scale(1.05);
+}
+
+
+.margin-minus {
+	margin-top: -50px;
+}
+
+/* Theme */
+
+.gallery-item {
+	display: block;
+  height: 240px;
+}
+
+.blog-item img {
+	display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* accordion */
+.page-content .accordion-button {
+	font-size: 22px;
+	background: #000;
+	color: #fff;
+	border-radius: 4px !important;
+	border: none !important;
+}
+
+.page-content .accordion-button:not(.collapsed) {
+	color: #111;
+	background-color: #eee;
+	box-shadow: none;
+}
+
+/* tabs */
+
+.nav.nav-tabs {
+	margin-bottom: 20px;
+	border-bottom: 2px solid #111;
+}
+
+.nav.nav-tabs .nav-link {
+	/* background: #000; */
+	color: #111;
+	padding: 10px 30px;
+	/* border-color: transparent; */
+	font-size: 20px;
+	font-weight: 700;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.nav.nav-tabs .nav-link.active {
+	background: #000;
+	color: #fff;
+	padding: 10px 30px;
+	border-color: #000;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 0;
+}
+
+.ref-card {
+  border-radius: 10px;
+  color: #eee;
+  background-color: #000;
+  text-align: center;
+}
+
+.ref-card.active {
+  border-radius: 10px;
+  color: #000;
+  background-color: #fff;
+}
+
+.ref-card a {
+  color: inherit;
+  border: 2px solid transparent;
+  padding: 14px 0 10px;
+  border-radius:8px;
+}
+
+.ref-card a:hover {
+  /* color: #fff !important; */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  border: 2px solid #444;
+}
+
+.titlemon.titlemon-bg {
+	min-height: 520px;
+}
+
+.titlemon a {
+	color: inherit;
+}
+
+.back-btn {
+  display: none;
+}
+
+.pagination .page-link {
+	color: #000;
+}
+
+.pagination .page-link {
+	color: #000;
+}
+
+.pagination .active > .page-link,
+.pagination .page-link.active {
+	background: #000;
+	border-color: #000;
+  color:#eee;
+}
+
+.site-footer .nav-link {
+	text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.25s ease;
+}
+
+.site-footer .nav-link:hover,
+.site-footer .nav-link:focus {
+	text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+
+/*---------------------------
+## Responsive
+---------------------------*/
+
+/* Portrait tablet to landscape and desktop to 1200px */
+
+@media all and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+
+}
+
+/* Portrait tablet to landscape and desktop to 992px */
+@media all and (max-width: 992px) {
+
+
+  .hero-slider .carousel .carousel-item {
+    height: 340px;
+  }
+
+  .hero-slider .carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+
+  .hero-slider .carousel .carousel-caption h4 {
+    font-size: 18px;
+  }
+
+  .hero-slider .carousel .carousel-caption h2 {
+    font-size: 40px;
+  }
+
+  .hero-slider .carousel .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .hero-slider .carousel .carousel-caption {
+    padding: 0 25px;
+  }
+
+  .hero-slider .carousel .carousel-caption > div {
+    top: 0;
+  }
+
+  .nav.nav-tabs .nav-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ultra-title {
+    font-size: 54px;
+  }
+
+  .header-nav .nav-item .dropdown-menu a {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .card.dark-card,
+  .card.dark-card.alt {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .site-section {
+    overflow-x: hidden;
+  }
+
+
+}
+
+/* Landscape phone to portrait tablet to 768px */
+@media all and (max-width: 768px) {
+
+
+}
+
+
+/* Landscape phones and down upto 576px */
+@media all and (max-width: 576px) {
+
+
+}
+
+
+/* Landscape phones and down upto 480px */
+@media all and (max-width: 480px) {
+
+
+}
+

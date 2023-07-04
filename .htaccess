@@ -1,0 +1,27 @@
+# CORE PHP CMS start
+
+# BEGIN Permalinks
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /core_php_cms/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /core_php_cms/permalink.php?link=$1 [L]
+</IfModule>
+# END Permalinks
+
+
+# INDEX TO BASE
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+
+# 404 ERROR PAGE
+RewriteEngine on
+RewriteBase /
+ErrorDocument 404 /core_php_cms/404.php
+
+
+# CORE PHP CMS end

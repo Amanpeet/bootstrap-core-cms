@@ -1,0 +1,52 @@
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.trumbowyg-box .trumbowyg-editor {
+	background: #fff;
+}
+
+
+/* Main Sidemenu */
+
+#wrapper {
+  overflow-x: hidden;
+  display: flex;
+}
+
+#site-sidebar {
+  min-height: 100vh;
+  margin-left: -200px;
+  width: 200px;
+  min-width: 200px;
+  transition: margin 0.25s ease-out;
+}
+
+#site-content {
+	width: 100vw;
+	min-width: 100vw;
+}
+
+body.site-sidebar-toggled #wrapper #site-sidebar {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #site-sidebar {
+    margin-left: 0;
+  }
+
+  #site-content {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.site-sidebar-toggled #wrapper #site-sidebar {
+    margin-left: -200px;
+  }
+}
+
+/* Theme */
+
